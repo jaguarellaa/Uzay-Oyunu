@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         score = 0;
+        wordScore = 0;
     }
     
     public void Pause()

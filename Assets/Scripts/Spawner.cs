@@ -44,6 +44,7 @@ public class Spawner : MonoBehaviour
 
 
             player.transform.localScale = new Vector3(1f, 1f, 1f);
+            shadow.transform.localScale = new Vector3(1.5f,1.5f, 1.5f);
             maxTime = 4f;
 
 
@@ -93,7 +94,7 @@ public class Spawner : MonoBehaviour
         {
 
             player.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
-            shadow.transform.localScale = new Vector3(1.8f,1.8f, 1.8f);
+            shadow.transform.localScale = new Vector3(1.35f,1.35f, 1.35f);
             maxTime = 2.5f;
             timer += Time.deltaTime;
 
@@ -107,7 +108,7 @@ public class Spawner : MonoBehaviour
         {
             Debug.Log("0.8-2");
             player.transform.localScale = new Vector3(0.6f,0.6f, 0.6f);
-            shadow.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+            shadow.transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
             maxTime = 2f;
             timer += Time.deltaTime;
 
@@ -122,7 +123,7 @@ public class Spawner : MonoBehaviour
         {
             Debug.Log("0.6-1.5");
             player.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            shadow.transform.localScale = new Vector3(1f, 1f, 1f);
+            shadow.transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
             maxTime = 1.5f;
             timer += Time.deltaTime;
 
@@ -138,7 +139,7 @@ public class Spawner : MonoBehaviour
             Debug.Log("0.3-1");
 
             player.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
-            shadow.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+            shadow.transform.localScale = new Vector3(0.45f, 0.45f, 0.45f);
             maxTime = 1f;
             timer += Time.deltaTime;
 

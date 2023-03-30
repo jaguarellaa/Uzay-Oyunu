@@ -18,6 +18,7 @@ public class Astronoat : MonoBehaviour
     public AudioSource[] aus;
 
     public GameObject score;
+    public GameObject wordscore;
     public GameObject pause;
     public GameObject cont;
     public GameObject DeathScreen;
@@ -127,6 +128,7 @@ public class Astronoat : MonoBehaviour
             Time.timeScale = 0;
             DeathScreen.SetActive(true);
             score.SetActive(false);
+            wordscore.SetActive(false);
             pause.SetActive(false);
             cont.SetActive(false);
         }
