@@ -18,4 +18,9 @@ public class MenuManager : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
+    public void ExitApp()
+    {
+        Application.Quit();
+    }
+
 }

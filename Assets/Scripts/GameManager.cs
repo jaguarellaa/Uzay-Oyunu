@@ -25,10 +25,13 @@ public class GameManager : MonoBehaviour
     public Button pause;
     public Button continuebtn;
 
+    public GameObject pausePanel;
+     
     void Start()
     {
         score = 0;
         scoreText.text = score.ToString();
+        pausePanel.SetActive(false);
       
     }
 
@@ -85,6 +88,7 @@ public class GameManager : MonoBehaviour
     
     public void Pause()
     {
+        pausePanel.SetActive(true);
         pause.gameObject.GetComponent<Image>().gameObject.SetActive(false);
         continuebtn.gameObject.GetComponent<Image>().gameObject.SetActive(true);
         pause.interactable = false;
@@ -95,6 +99,7 @@ public class GameManager : MonoBehaviour
 
     public void Continue()
     {
+        pausePanel.SetActive(false);
         pause.gameObject.GetComponent<Image>().gameObject.SetActive(true);
         continuebtn.gameObject.GetComponent<Image>().gameObject.SetActive(false);
         continuebtn.interactable = false;
@@ -104,6 +109,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-  
+   public void returnMenu()
+    {
+        pausePanel.SetActive(false);
+        SceneManager.LoadScene(0);
+    }
 }
 
